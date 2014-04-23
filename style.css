@@ -1,0 +1,39 @@
+[class*="col-"] {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+@media print
+{
+    body {
+        /* Adjust this to get the right number of pages */
+        width:800px;
+    }
+    div[class|=col-]{float:left;}
+    .col-sm-6{width:50%}
+    a[href]:after {
+        content: none;
+    }
+}
+
+#container {
+    height: 50px;
+    text-align: justify;
+}
+
+.box{
+    width: 140px;
+    height: 50px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: center;
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
